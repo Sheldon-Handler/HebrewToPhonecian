@@ -26,17 +26,17 @@ public class TextFileParser {
         String[] letters = line.split("");
 
         // write each letter to the output file
-        for (int i = 0; i < letters.length; i++) {
+        for (String letter : letters) {
 
           // If[i] letter is a Hebrew letter, then the corresponding Phoenician letter
           // will be written to the output.
-          if (HebrewToPhoenicianMap.hebrewToPhoenicianMap(letters[i]) != null) {
-            outputFileWriter.write(HebrewToPhoenicianMap.hebrewToPhoenicianMap(letters[i]));
+          if (HebrewToPhoenicianMap.hebrewToPhoenicianMap(letter) != null) {
+            outputFileWriter.write(HebrewToPhoenicianMap.hebrewToPhoenicianMap(letter));
           }
           // If letter[i] is not a Hebrew letter, letter[i] will be directly written to
           // output file without any conversion.
           else {
-            outputFileWriter.write(letters[i]);
+            outputFileWriter.write(letter);
           }
 
         }
