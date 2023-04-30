@@ -1,15 +1,32 @@
 import java.util.HashMap;
 
+/**
+ * This class is used for inputting a Hebrew letter and getting back the corresponding Phoenician letter.
+ */
 public class HebrewToPhoenicianMap {
 
+  /**
+   * Default constructor
+   */
   public HebrewToPhoenicianMap() {
   }
 
+  /**
+   * Constructor with parameter for passing hebrewLetter to obtain equivalent phoenician letter
+   *
+   * @param hebrewLetter hebrew letter to pass to obtain the equivalent phoenician letter
+   */
   public HebrewToPhoenicianMap(String hebrewLetter) {
     hebrewToPhoenicianMap(hebrewLetter);
   }
 
-  public final static String hebrewToPhoenicianMap(String hebrewLetter) {
+  /**
+   * This method takes a Hebrew letter which is used as the key for searching a HashMap that returns the corresponding value that is the equivalent Phoenician letter.
+   *
+   * @param hebrewLetter Hebrew letter as a String to pass as the key for searching HashMap for corresponding Phoenician letter
+   * @return the corresponding Phoenician letter that matches the Hebrew letter parameter
+   */
+  public static String hebrewToPhoenicianMap(String hebrewLetter) {
     // create the HashMap and populate it with mappings
     HashMap<String, String> hebrewToPhoenicianMap = new HashMap<>();
     hebrewToPhoenicianMap.put("א", "𐤀");
@@ -40,7 +57,7 @@ public class HebrewToPhoenicianMap {
     hebrewToPhoenicianMap.put("ש", "𐤔");
     hebrewToPhoenicianMap.put("ת", "𐤕");
 
-    // retrieve a Phoenician letter for a given Hebrew letter
+    // return the corresponding Phoenician letter for the given Hebrew letter
     return hebrewToPhoenicianMap.get(hebrewLetter);
   }
 }

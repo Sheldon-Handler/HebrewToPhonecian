@@ -28,7 +28,7 @@ public class TextFileParser {
         // write each letter to the output file
         for (int i = 0; i < letters.length; i++) {
 
-          // If[i] letter is a Hebrew letter, than the corresponding Phoenician letter
+          // If[i] letter is a Hebrew letter, then the corresponding Phoenician letter
           // will be written to the output.
           if (HebrewToPhoenicianMap.hebrewToPhoenicianMap(letters[i]) != null) {
             outputFileWriter.write(HebrewToPhoenicianMap.hebrewToPhoenicianMap(letters[i]));
@@ -41,7 +41,7 @@ public class TextFileParser {
 
         }
 
-        // Creates new line to seperate current line from the next line.
+        // Creates new line to separate current line from the next line.
         outputFileWriter.write("\n");
       }
 
