@@ -52,6 +52,7 @@ public class HebrewToPhoenicianMap {
     hebrewToPhoenicianMap.put("מ", "𐤌");
     hebrewToPhoenicianMap.put("ם", "𐤌");
     hebrewToPhoenicianMap.put("נ", "𐤍");
+    hebrewToPhoenicianMap.put("׆", "𐤍");
     hebrewToPhoenicianMap.put("ן", "𐤍");
     hebrewToPhoenicianMap.put("ס", "𐤎");
     hebrewToPhoenicianMap.put("ע", "𐤏");
@@ -64,7 +65,6 @@ public class HebrewToPhoenicianMap {
     hebrewToPhoenicianMap.put("ש", "𐤔");
     hebrewToPhoenicianMap.put("ת", "𐤕");
     hebrewToPhoenicianMap.put(" ", "𐤟");
-
 
     // return the corresponding Phoenician letter for the given Hebrew letter
     return hebrewToPhoenicianMap.get(hebrewLetter);
