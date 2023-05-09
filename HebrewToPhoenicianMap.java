@@ -42,10 +42,13 @@ public class HebrewToPhoenicianMap {
     hebrewToPhoenicianMap.put("ד", "𐤃");
     hebrewToPhoenicianMap.put("ה", "𐤄");
     hebrewToPhoenicianMap.put("ו", "𐤅");
+    hebrewToPhoenicianMap.put("װ", "𐤅𐤅");
+    hebrewToPhoenicianMap.put("ױ", "𐤅𐤉");
     hebrewToPhoenicianMap.put("ז", "𐤆");
     hebrewToPhoenicianMap.put("ח", "𐤇");
     hebrewToPhoenicianMap.put("ט", "𐤈");
     hebrewToPhoenicianMap.put("י", "𐤉");
+    hebrewToPhoenicianMap.put("ײ", "𐤉𐤉");
     hebrewToPhoenicianMap.put("כ", "𐤊");
     hebrewToPhoenicianMap.put("ך", "𐤊");
     hebrewToPhoenicianMap.put("ל", "𐤋");
