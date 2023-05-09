@@ -67,6 +67,7 @@ public class HebrewToPhoenicianMap {
     hebrewToPhoenicianMap.put("ר", "𐤓");
     hebrewToPhoenicianMap.put("ש", "𐤔");
     hebrewToPhoenicianMap.put("ת", "𐤕");
+    hebrewToPhoenicianMap.put("ׯ", "\uD802\uDD09\uD802\uDD04\uD802\uDD05\uD802\uDD04");
     hebrewToPhoenicianMap.put(" ", "𐤟");
 
     // return the corresponding Phoenician letter for the given Hebrew letter
