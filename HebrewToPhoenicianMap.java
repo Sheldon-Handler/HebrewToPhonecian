@@ -7,12 +7,6 @@ import java.util.HashMap;
 public class HebrewToPhoenicianMap {
 
   /**
-   * Default constructor
-   */
-  public HebrewToPhoenicianMap() {
-  }
-
-  /**
    * Constructor with parameter for passing hebrewLetter to obtain equivalent
    * phoenician letter
    *

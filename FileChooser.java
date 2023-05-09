@@ -13,23 +13,20 @@ public class FileChooser {
     jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
     JButton openButton = new JButton("Open");
-    openButton.addActionListener(new ActionListener() {
-      @Override
-      public void actionPerformed(ActionEvent actionEvent) {
-        // Create a file chooser
-        JFileChooser jFileChooser = new JFileChooser();
+    openButton.addActionListener(actionEvent -> {
+      // Create a file chooser
+      JFileChooser jFileChooser = new JFileChooser();
 
-        // Show the open file dialog
-        int result = jFileChooser.showOpenDialog(jFrame);
+      // Show the open file dialog
+      int result = jFileChooser.showOpenDialog(jFrame);
 
-        // If the user selects a file
-        if (result == JFileChooser.APPROVE_OPTION) {
-          // Get the selected file
-          File file = jFileChooser.getSelectedFile();
+      // If the user selects a file
+      if (result == JFileChooser.APPROVE_OPTION) {
+        // Get the selected file
+        File file = jFileChooser.getSelectedFile();
 
-          // Display the file name
-          System.out.println("Selected file: " + file.getName());
-        }
+        // Display the file name
+        System.out.println("Selected file: " + file.getName());
       }
     });
 
