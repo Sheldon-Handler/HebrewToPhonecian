@@ -6,9 +6,15 @@ import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+/**
+ * Class for FileChooser in Java GUI
+ */
 public class FileChooser {
 
-  public static void main(String[] args) {
+  /**
+   * method for creating fileChooser window method
+   */
+  public void fileChooser() {
     JFrame jFrame = new JFrame("FileChooser Demo");
     jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
