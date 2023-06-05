@@ -17,26 +17,28 @@ public class StringConverter {
 
     public String convertHebrewToPhoenician(String input) {
 
-        String outputString;
+        String outputString = "";
 
         String[] inputArray = input.split("");
         // write each letter to the output file
-        for (int i; i < inputArray.length; i++) {
+        for (int i = 0; i < inputArray.length; i++) {
 
-            String convertedLetter = hebrewToPhoenicianMap(letter);
+            String convertedLetter = HebrewToPhoenicianMap.hebrewToPhoenicianMap.get(inputArray[i]);
 
             // If[i] letter is a Hebrew letter, then the corresponding Phoenician letter
             // will be written to the output.
-            if (convertedLetter != null && letter != " ") {
+            if (convertedLetter != null) {
                 outputString += convertedLetter;
-            } else if (convertedLetter != null && letter == " ") {
+            } else if (inputArray[i] == " ") {
 
-                if (hebrewToPhoenicianMap(inputArray[i - 1]) != null
-                        && hebrewToPhoenicianMap(inputArray[i + 1]) != null) {
-                    outputString += hebrewToPhoenicianMap.getPhoenicianWordSeperator();
+                if (HebrewToPhoenicianMap.hebrewToPhoenicianMap.get(inputArray[i - 1]) != null
+                        && HebrewToPhoenicianMap.hebrewToPhoenicianMap.get(inputArray[i + 1]) != null) {
+                    outputString += HebrewToPhoenicianMap.phoenicianWordSeparator;
                 } else {
                     outputString += " ";
                 }
+            } else {
+              outputString += inputArray[i];
             }
         }
 

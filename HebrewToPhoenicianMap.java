@@ -4,7 +4,7 @@ import java.util.HashMap;
  * This class is used for inputting a Hebrew letter and getting back the
  * corresponding Phoenician letter.
  */
-public interface HebrewToPhoenicianMap {
+public class HebrewToPhoenicianMap {
 
   public static final String phoenicianWordSeparator = "𐤟";
 

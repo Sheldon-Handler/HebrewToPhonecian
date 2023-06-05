@@ -1,6 +1,4 @@
-import java.awt.*;
-import javax.swing.*;
-import javax.swing.border.Border;
+import java.util.*;
 
 /**
  * Main class
@@ -41,8 +39,9 @@ public class Main {
 
     StringConverter stringConverter = new StringConverter();
 
-    System.out.println("Enter input text: \n");
+    System.out.println("Enter Hebrew text:");
     Scanner scanner = new Scanner(System.in);
-    System.out.println("Hebrew Text in Phoenician:\n" + stringConverter.convertHebrewToPhoenician(scanner));
+    System.out.println("\nHebrew Text in Phoenician alphabet:\n" + stringConverter.convertHebrewToPhoenician(scanner.nextLine()));
+    scanner.close();
   }
 }
