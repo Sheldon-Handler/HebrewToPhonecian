@@ -11,6 +11,8 @@ public class TextFileParser {
 
   public void textFileParser(String inputFilePath, String outputFilePath) {
 
+    StringConverter stringConverter = new StringConverter();
+
     try {
       // create the input and output file readers and writers
       FileReader inputFileReader = new FileReader(inputFilePath);
@@ -30,8 +32,8 @@ public class TextFileParser {
 
           // If[i] letter is a Hebrew letter, then the corresponding Phoenician letter
           // will be written to the output.
-          if (HebrewToPhoenicianMap.hebrewToPhoenicianMap(letter) != null) {
-            outputFileWriter.write(HebrewToPhoenicianMap.hebrewToPhoenicianMap(letter));
+          if (hebrewToPhoenicianMap.get(letter) != null) {
+            outputFileWriter.write(hebrewToPhoenicianMap.get(letter));
           }
           // If letter[i] is not a Hebrew letter, letter[i] will be directly written to
           // output file without any conversion.
@@ -39,7 +41,7 @@ public class TextFileParser {
             outputFileWriter.write(letter);
           }
 
-        }
+    }
 
         // Creates new line to separate current line from the next line.
         outputFileWriter.write("\n");

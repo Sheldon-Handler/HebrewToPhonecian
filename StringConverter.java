@@ -1,14 +1,46 @@
+import java.io.BufferedReader;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+
 public class StringConverter {
 
     private String inputString;
-    private String outputString;
 
     public StringConverter() {
     }
 
-    public StringConverter(String inputString, String outputString) {
+    public StringConverter(String inputString) {
         this.inputString = inputString;
-        this.outputString = outputString;
+    }
+
+    public String convertHebrewToPhoenician(String input) {
+
+        String outputString;
+
+        String[] inputArray = input.split("");
+        // write each letter to the output file
+        for (int i; i < inputArray.length; i++) {
+
+            String convertedLetter = hebrewToPhoenicianMap(letter);
+
+            // If[i] letter is a Hebrew letter, then the corresponding Phoenician letter
+            // will be written to the output.
+            if (convertedLetter != null && letter != " ") {
+                outputString += convertedLetter;
+            } else if (convertedLetter != null && letter == " ") {
+
+                if (hebrewToPhoenicianMap(inputArray[i - 1]) != null
+                        && hebrewToPhoenicianMap(inputArray[i + 1]) != null) {
+                    outputString += hebrewToPhoenicianMap.getPhoenicianWordSeperator();
+                } else {
+                    outputString += " ";
+                }
+            }
+        }
+
+        return outputString;
     }
 
     public String getInputString() {
@@ -17,13 +49,5 @@ public class StringConverter {
 
     public void setInputString(String inputString) {
         this.inputString = inputString;
-    }
-
-    public String getOutputString() {
-        return outputString;
-    }
-
-    public void setOutputString(String outputString) {
-        this.outputString = outputString;
     }
 }

@@ -4,67 +4,42 @@ import java.util.HashMap;
  * This class is used for inputting a Hebrew letter and getting back the
  * corresponding Phoenician letter.
  */
-public class HebrewToPhoenicianMap {
+public interface HebrewToPhoenicianMap {
 
-  /**
-   * Constructor with parameter for passing hebrewLetter to obtain equivalent
-   * phoenician letter
-   *
-   * @param hebrewLetter hebrew letter to pass to obtain the equivalent phoenician
-   *                     letter
-   */
-  public HebrewToPhoenicianMap(String hebrewLetter) {
-    hebrewToPhoenicianMap(hebrewLetter);
-  }
+  public static final String phoenicianWordSeparator = "𐤟";
 
-  /**
-   * This method takes a Hebrew letter which is used as the key for searching a
-   * HashMap that returns the corresponding value that is the equivalent
-   * Phoenician letter.
-   *
-   * @param hebrewLetter Hebrew letter as a String to pass as the key for
-   *                     searching HashMap for corresponding Phoenician letter
-   * @return the corresponding Phoenician letter that matches the Hebrew letter
-   *         parameter
-   */
-  public static String hebrewToPhoenicianMap(String hebrewLetter) {
-    // create the HashMap and populate it with mappings
-    HashMap<String, String> hebrewToPhoenicianMap = new HashMap<>();
-    hebrewToPhoenicianMap.put("א", "𐤀");
-    hebrewToPhoenicianMap.put("ב", "𐤁");
-    hebrewToPhoenicianMap.put("ג", "𐤂");
-    hebrewToPhoenicianMap.put("ד", "𐤃");
-    hebrewToPhoenicianMap.put("ה", "𐤄");
-    hebrewToPhoenicianMap.put("ו", "𐤅");
-    hebrewToPhoenicianMap.put("װ", "𐤅𐤅");
-    hebrewToPhoenicianMap.put("ױ", "𐤅𐤉");
-    hebrewToPhoenicianMap.put("ז", "𐤆");
-    hebrewToPhoenicianMap.put("ח", "𐤇");
-    hebrewToPhoenicianMap.put("ט", "𐤈");
-    hebrewToPhoenicianMap.put("י", "𐤉");
-    hebrewToPhoenicianMap.put("ײ", "𐤉𐤉");
-    hebrewToPhoenicianMap.put("כ", "𐤊");
-    hebrewToPhoenicianMap.put("ך", "𐤊");
-    hebrewToPhoenicianMap.put("ל", "𐤋");
-    hebrewToPhoenicianMap.put("מ", "𐤌");
-    hebrewToPhoenicianMap.put("ם", "𐤌");
-    hebrewToPhoenicianMap.put("נ", "𐤍");
-    hebrewToPhoenicianMap.put("׆", "𐤍");
-    hebrewToPhoenicianMap.put("ן", "𐤍");
-    hebrewToPhoenicianMap.put("ס", "𐤎");
-    hebrewToPhoenicianMap.put("ע", "𐤏");
-    hebrewToPhoenicianMap.put("פ", "𐤐");
-    hebrewToPhoenicianMap.put("ף", "𐤐");
-    hebrewToPhoenicianMap.put("צ", "𐤑");
-    hebrewToPhoenicianMap.put("ץ", "𐤑");
-    hebrewToPhoenicianMap.put("ק", "𐤒");
-    hebrewToPhoenicianMap.put("ר", "𐤓");
-    hebrewToPhoenicianMap.put("ש", "𐤔");
-    hebrewToPhoenicianMap.put("ת", "𐤕");
-    hebrewToPhoenicianMap.put("ׯ", "\uD802\uDD09\uD802\uDD04\uD802\uDD05\uD802\uDD04");
-    hebrewToPhoenicianMap.put(" ", "𐤟");
-
-    // return the corresponding Phoenician letter for the given Hebrew letter
-    return hebrewToPhoenicianMap.get(hebrewLetter);
-  }
+  public static final HashMap<String, String> hebrewToPhoenicianMap = new HashMap<String, String>() {{
+    put("א", "𐤀");
+    put("ב", "𐤁");
+    put("ג", "𐤂");
+    put("ד", "𐤃");
+    put("ה", "𐤄");
+    put("ו", "𐤅");
+    put("װ", "𐤅𐤅");
+    put("ױ", "𐤅𐤉");
+    put("ז", "𐤆");
+    put("ח", "𐤇");
+    put("ט", "𐤈");
+    put("י", "𐤉");
+    put("ײ", "𐤉𐤉");
+    put("כ", "𐤊");
+    put("ך", "𐤊");
+    put("ל", "𐤋");
+    put("מ", "𐤌");
+    put("ם", "𐤌");
+    put("נ", "𐤍");
+    put("׆", "𐤍");
+    put("ן", "𐤍");
+    put("ס", "𐤎");
+    put("ע", "𐤏");
+    put("פ", "𐤐");
+    put("ף", "𐤐");
+    put("צ", "𐤑");
+    put("ץ", "𐤑");
+    put("ק", "𐤒");
+    put("ר", "𐤓");
+    put("ש", "𐤔");
+    put("ת", "𐤕");
+    put("ׯ", "\uD802\uDD09\uD802\uDD04\uD802\uDD05\uD802\uDD04");
+  }};
 }

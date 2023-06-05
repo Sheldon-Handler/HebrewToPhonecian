@@ -39,5 +39,10 @@ public class Main {
 
     textFileParser.textFileParser("input.txt", "output.txt");
 
+    StringConverter stringConverter = new StringConverter();
+
+    System.out.println("Enter input text: \n");
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Hebrew Text in Phoenician:\n" + stringConverter.convertHebrewToPhoenician(scanner));
   }
 }
