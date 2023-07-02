@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 /**
  * Main class
@@ -23,25 +23,25 @@ public class Main {
 //    jFrame.setVisible(true);
 //  }
 
-  /**
-   * main method for running Java code at launch
-   *
-   * @param args String array args for main method
-   */
-  public static void main(String[] args) {
+    /**
+     * main method for running Java code at launch
+     *
+     * @param args String array args for main method
+     */
+    public static void main(String[] args) {
 
 //    createAndShowGUI();
 
-    // instantiate the class TextFileParser
-    TextFileParser textFileParser = new TextFileParser();
+        // instantiate the class TextFileParser
+        TextFileParser textFileParser = new TextFileParser();
 
-    textFileParser.textFileParser("input.txt", "output.txt");
+        textFileParser.textFileParser("input.txt", "output.txt");
 
-    StringConverter stringConverter = new StringConverter();
+        StringConverter stringConverter = new StringConverter();
 
-    System.out.println("Enter Hebrew text:");
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("\nHebrew Text in Phoenician alphabet:\n" + stringConverter.convertHebrewToPhoenician(scanner.nextLine()));
-    scanner.close();
-  }
+        System.out.println("Enter Hebrew text:");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\nHebrew Text in Phoenician alphabet:\n" + stringConverter.convertHebrewToPhoenician(scanner.nextLine()));
+        scanner.close();
+    }
 }

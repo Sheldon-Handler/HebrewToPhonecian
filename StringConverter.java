@@ -1,9 +1,3 @@
-import java.io.BufferedReader;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
-
 public class StringConverter {
 
     private String inputString;
@@ -39,7 +33,7 @@ public class StringConverter {
                     outputString += " ";
                 }
             } else {
-              outputString += inputArray[i];
+                outputString += inputArray[i];
             }
         }
 
