@@ -67,7 +67,6 @@ public class HebrewToPhoenicianMap {
     hebrewToPhoenicianMap.put("ש", "𐤔");
     hebrewToPhoenicianMap.put("ת", "𐤕");
     hebrewToPhoenicianMap.put("ׯ", "\uD802\uDD09\uD802\uDD04\uD802\uDD05\uD802\uDD04");
-    hebrewToPhoenicianMap.put(" ", "𐤟");
   }
 
   /**
@@ -77,5 +76,8 @@ public class HebrewToPhoenicianMap {
    */
   public String getHebrewToPhoenicianMap(String hebrewLetter) {
     return hebrewToPhoenicianMap.get(hebrewLetter);
+  }
+  public String getPhoenicianWordSeparator() {
+    return "𐤟";
   }
 }
