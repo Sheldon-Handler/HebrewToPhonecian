@@ -7,6 +7,18 @@ import java.util.HashMap;
 public class HebrewToPhoenicianMap {
 
   /**
+   * HashMap with Hebrew letter String as the keys and Phoenician letter String as values.
+   */
+  private HashMap<String, String> hebrewToPhoenicianMap = new HashMap<>();
+
+  /**
+   * Default constructor
+   */
+  public HebrewToPhoenicianMap() {
+    setHebrewToPhoenicianMap();
+  }
+
+  /**
    * Constructor with parameter for passing hebrewLetter to obtain equivalent
    * phoenician letter
    *
@@ -14,22 +26,15 @@ public class HebrewToPhoenicianMap {
    *                     letter
    */
   public HebrewToPhoenicianMap(String hebrewLetter) {
-    hebrewToPhoenicianMap(hebrewLetter);
+    setHebrewToPhoenicianMap();
+    getHebrewToPhoenicianMap(hebrewLetter);
   }
 
+
   /**
-   * This method takes a Hebrew letter which is used as the key for searching a
-   * HashMap that returns the corresponding value that is the equivalent
-   * Phoenician letter.
-   *
-   * @param hebrewLetter Hebrew letter as a String to pass as the key for
-   *                     searching HashMap for corresponding Phoenician letter
-   * @return the corresponding Phoenician letter that matches the Hebrew letter
-   *         parameter
+   * This method sets the HashMap hebrewToPhoenicianMap so that each hebrew letter key matches its corresponding Phoenician letter value.
    */
-  public static String hebrewToPhoenicianMap(String hebrewLetter) {
-    // create the HashMap and populate it with mappings
-    HashMap<String, String> hebrewToPhoenicianMap = new HashMap<>();
+  public void setHebrewToPhoenicianMap() {
     hebrewToPhoenicianMap.put("א", "𐤀");
     hebrewToPhoenicianMap.put("ב", "𐤁");
     hebrewToPhoenicianMap.put("ג", "𐤂");
@@ -63,8 +68,14 @@ public class HebrewToPhoenicianMap {
     hebrewToPhoenicianMap.put("ת", "𐤕");
     hebrewToPhoenicianMap.put("ׯ", "\uD802\uDD09\uD802\uDD04\uD802\uDD05\uD802\uDD04");
     hebrewToPhoenicianMap.put(" ", "𐤟");
+  }
 
-    // return the corresponding Phoenician letter for the given Hebrew letter
+  /**
+   * This getter returns the Phoenician letter String that matches the hebrewLetter String parameter.
+   * @param hebrewLetter String key to find the corresponding HashMap value for
+   * @return Phoenician letter(s) that correspond to the hebrewLetter String
+   */
+  public String getHebrewToPhoenicianMap(String hebrewLetter) {
     return hebrewToPhoenicianMap.get(hebrewLetter);
   }
 }

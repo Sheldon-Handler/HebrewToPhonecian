@@ -19,6 +19,8 @@ public class TextFileParser {
       // create the buffered reader for the input file
       BufferedReader bufferedReader = new BufferedReader(inputFileReader);
 
+      HebrewToPhoenicianMap hebrewToPhoenicianMap = new HebrewToPhoenicianMap();
+
       // read the input file line by line
       String line;
       while ((line = bufferedReader.readLine()) != null) {
@@ -30,8 +32,8 @@ public class TextFileParser {
 
           // If[i] letter is a Hebrew letter, then the corresponding Phoenician letter
           // will be written to the output.
-          if (HebrewToPhoenicianMap.hebrewToPhoenicianMap(letter) != null) {
-            outputFileWriter.write(HebrewToPhoenicianMap.hebrewToPhoenicianMap(letter));
+          if (hebrewToPhoenicianMap.getHebrewToPhoenicianMap(letter) != null) {
+            outputFileWriter.write(hebrewToPhoenicianMap.getHebrewToPhoenicianMap(letter));
           }
           // If letter[i] is not a Hebrew letter, letter[i] will be directly written to
           // output file without any conversion.
