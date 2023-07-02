@@ -1,6 +1,4 @@
-import java.awt.*;
-import javax.swing.*;
-import javax.swing.border.Border;
+import java.util.*;
 
 /**
  * Main class
@@ -39,5 +37,11 @@ public class Main {
 
     textFileParser.textFileParser("input.txt", "output.txt");
 
+    StringConverter stringConverter = new StringConverter();
+
+    System.out.println("Enter Hebrew text:");
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("\nHebrew Text in Phoenician alphabet:\n" + stringConverter.convertHebrewToPhoenician(scanner.nextLine()));
+    scanner.close();
   }
 }
