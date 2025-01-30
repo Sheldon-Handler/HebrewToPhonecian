@@ -1,8 +1,10 @@
+package example;
+
 import javax.swing.*;
 import java.io.File;
 
 /**
- * Class for FileChooser in Java GUI
+ * Class for example.FileChooser in Java GUI
  */
 public class FileChooser {
 
@@ -10,7 +12,7 @@ public class FileChooser {
      * method for creating fileChooser window method
      */
     public void fileChooser() {
-        JFrame jFrame = new JFrame("FileChooser Demo");
+        JFrame jFrame = new JFrame("example.FileChooser Demo");
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JButton openButton = new JButton("Open");

@@ -1,3 +1,5 @@
+package example;
+
 import java.util.HashMap;
 
 /**
@@ -9,7 +11,7 @@ public class HebrewToPhoenicianMap {
     /**
      * HashMap with Hebrew letter String as the keys and Phoenician letter String as values.
      */
-    private HashMap<String, String> hebrewToPhoenicianMap = new HashMap<>();
+    private final HashMap<String, String> hebrewToPhoenicianMap = new HashMap<>();
 
     /**
      * Default constructor
@@ -67,6 +69,10 @@ public class HebrewToPhoenicianMap {
         hebrewToPhoenicianMap.put("ש", "𐤔");
         hebrewToPhoenicianMap.put("ת", "𐤕");
         hebrewToPhoenicianMap.put("ׯ", "\uD802\uDD09\uD802\uDD04\uD802\uDD05\uD802\uDD04");
+        hebrewToPhoenicianMap.put("ﬡ", "\uD802\uDD00ּ");
+        hebrewToPhoenicianMap.put("אַ", "\uD802\uDD00ָ");
+        hebrewToPhoenicianMap.put("אּ", "\uD802\uDD00ִ");
+        hebrewToPhoenicianMap.put("ﭏ", "𐤀𐤋");
     }
 
     /**

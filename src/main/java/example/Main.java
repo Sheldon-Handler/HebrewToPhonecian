@@ -1,7 +1,9 @@
+package example;
+
 import java.util.Scanner;
 
 /**
- * Main class
+ * example.Main class
  */
 public class Main {
 //  private static void createAndShowGUI() {
@@ -32,7 +34,7 @@ public class Main {
 
 //    createAndShowGUI();
 
-        // instantiate the class TextFileParser
+        // instantiate the class example.TextFileParser
         TextFileParser textFileParser = new TextFileParser();
 
         textFileParser.textFileParser("input.txt", "output.txt");
