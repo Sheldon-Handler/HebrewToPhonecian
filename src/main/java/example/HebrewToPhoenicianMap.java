@@ -69,10 +69,51 @@ public class HebrewToPhoenicianMap {
         hebrewToPhoenicianMap.put("ש", "𐤔");
         hebrewToPhoenicianMap.put("ת", "𐤕");
         hebrewToPhoenicianMap.put("ׯ", "\uD802\uDD09\uD802\uDD04\uD802\uDD05\uD802\uDD04");
-        hebrewToPhoenicianMap.put("ﬡ", "\uD802\uDD00ּ");
-        hebrewToPhoenicianMap.put("אַ", "\uD802\uDD00ָ");
+
+        //  map from Alphabetic Presentation Forms block
+        hebrewToPhoenicianMap.put("ﬡ", "\uD802\uDD00");
+        hebrewToPhoenicianMap.put("אַ", "\uD802\uDD00ַ");
+        hebrewToPhoenicianMap.put("אָ", "\uD802\uDD00ָ");
         hebrewToPhoenicianMap.put("אּ", "\uD802\uDD00ִ");
         hebrewToPhoenicianMap.put("ﭏ", "𐤀𐤋");
+        hebrewToPhoenicianMap.put("בּ", "\uD802\uDD01ּ");
+        hebrewToPhoenicianMap.put("בֿ", "\uD802\uDD01ֿ");
+        hebrewToPhoenicianMap.put("גּ", "\uD802\uDD02ּ");
+        hebrewToPhoenicianMap.put("ﬢ", "𐤃");
+        hebrewToPhoenicianMap.put("דּ", "\uD802\uDD03ּ");
+        hebrewToPhoenicianMap.put("ﬣ", "𐤄");
+        hebrewToPhoenicianMap.put("הּ", "\uD802\uDD04ּ");
+        hebrewToPhoenicianMap.put("וּ", "\uD802\uDD05ּ");
+        hebrewToPhoenicianMap.put("וֹ", "\uD802\uDD05ֹ");
+        hebrewToPhoenicianMap.put("זּ", "\uD802\uDD06ּ");
+        hebrewToPhoenicianMap.put("טּ", "\uD802\uDD07ּ");
+        hebrewToPhoenicianMap.put("יִ", "\uD802\uDD08ִ");
+        hebrewToPhoenicianMap.put("ײַ", "\uD802\uDD08ַ\uD802\uDD08ַ");
+        hebrewToPhoenicianMap.put("יּ", "\uD802\uDD08ּ");
+        hebrewToPhoenicianMap.put("ﬤ", "𐤊");
+        hebrewToPhoenicianMap.put("כּ", "\uD802\uDD09ֹ");
+        hebrewToPhoenicianMap.put("כֿ", "\uD802\uDD09ֿ");
+        hebrewToPhoenicianMap.put("ךּ", "\uD802\uDD09ּ");
+        hebrewToPhoenicianMap.put("ﬥ", "𐤋");
+        hebrewToPhoenicianMap.put("לּ", "\uD802\uDD10ּ");
+        hebrewToPhoenicianMap.put("מּ", "\uD802\uDD11ּ");
+        hebrewToPhoenicianMap.put("ﬦ", "\uD802\uDD11");
+        hebrewToPhoenicianMap.put("נּ", "\uD802\uDD12ּ");
+        hebrewToPhoenicianMap.put("סּ", "\uD802\uDD13ּ");
+        hebrewToPhoenicianMap.put("ﬠ", "𐤏");
+        hebrewToPhoenicianMap.put("פּ", "\uD802\uDD15ּ");
+        hebrewToPhoenicianMap.put("פֿ", "\uD802\uDD15ֿ");
+        hebrewToPhoenicianMap.put("ףּ", "\uD802\uDD15ּ");
+        hebrewToPhoenicianMap.put("צּ", "\uD802\uDD16ּ");
+        hebrewToPhoenicianMap.put("קּ", "\uD802\uDD17ּ");
+        hebrewToPhoenicianMap.put("רּ", "\uD802\uDD18ּ");
+        hebrewToPhoenicianMap.put("שׁ", "\uD802\uDD19ׁׁ");
+        hebrewToPhoenicianMap.put("שּׁ", "\uD802\uDD19ּׁ");
+        hebrewToPhoenicianMap.put("שׂ", "\uD802\uDD19ׂ");
+        hebrewToPhoenicianMap.put("שּׂ", "\uD802\uDD19ּׂ");
+        hebrewToPhoenicianMap.put("שּ", "\uD802\uDD19ּ");
+        hebrewToPhoenicianMap.put("ﬨ", "𐤕");
+        hebrewToPhoenicianMap.put("תּ", "\uD802\uDD1Aּ");
     }
 
     /**
