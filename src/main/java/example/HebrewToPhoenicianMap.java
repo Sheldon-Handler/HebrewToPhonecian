@@ -21,19 +21,6 @@ public class HebrewToPhoenicianMap {
     }
 
     /**
-     * Constructor with parameter for passing hebrewLetter to obtain equivalent
-     * phoenician letter
-     *
-     * @param hebrewLetter hebrew letter to pass to obtain the equivalent phoenician
-     *                     letter
-     */
-    public HebrewToPhoenicianMap(String hebrewLetter) {
-        setHebrewToPhoenicianMap();
-        getHebrewToPhoenicianMap(hebrewLetter);
-    }
-
-
-    /**
      * This method sets the HashMap hebrewToPhoenicianMap so that each hebrew letter key matches its corresponding Phoenician letter value.
      */
     public void setHebrewToPhoenicianMap() {
@@ -126,6 +113,11 @@ public class HebrewToPhoenicianMap {
         return hebrewToPhoenicianMap.get(hebrewLetter);
     }
 
+    /**
+     * This returns the Phoenician word separator.
+     *
+     * @return special character used as a word separator for Phoenician texts
+     */
     public String getPhoenicianWordSeparator() {
         return "𐤟";
     }
