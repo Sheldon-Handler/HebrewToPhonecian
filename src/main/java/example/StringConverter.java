@@ -1,5 +1,7 @@
 package example;
 
+import java.util.Scanner;
+
 public class StringConverter {
 
     private String inputString;

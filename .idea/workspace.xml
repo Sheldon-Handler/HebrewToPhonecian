@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18f28137-0a26-4f98-b287-a3435ba8de0e" name="Changes" comment="workspace.xml updated">
+    <list default="true" id="18f28137-0a26-4f98-b287-a3435ba8de0e" name="Changes" comment="Moved getter to before setter">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/example/HebrewToPhoenicianMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/HebrewToPhoenicianMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/example/StringConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example/StringConverter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +91,7 @@
       <updated>1738091105113</updated>
       <workItem from="1738091108689" duration="6001000" />
       <workItem from="1738253009681" duration="7032000" />
-      <workItem from="1738862527845" duration="2130000" />
+      <workItem from="1738862527845" duration="5551000" />
     </task>
     <task id="LOCAL-00001" summary="Reorganize into proper folder structure">
       <option name="closed" value="true" />
@@ -123,7 +125,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738864233694</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed some JavaDocs">
+      <option name="closed" value="true" />
+      <created>1738864764629</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738864764629</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Moved getter to before setter">
+      <option name="closed" value="true" />
+      <created>1738864900898</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1738864900898</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +151,8 @@
     <MESSAGE value="Reorganize into proper folder structure" />
     <MESSAGE value="Completed hashmap" />
     <MESSAGE value="workspace.xml updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml updated" />
+    <MESSAGE value="Fixed some JavaDocs" />
+    <MESSAGE value="Moved getter to before setter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved getter to before setter" />
   </component>
 </project>
